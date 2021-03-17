@@ -1,5 +1,5 @@
 # hass_dsame
-Docker container to listen to S.A.M.E weather radio signals and generate a corresponding event in Home Assistant
+Docker container to listen to S.A.M.E weather radio signals and generate a corresponding event in Home Assistant. Relies on the [dsame](https://github.com/MaxwellDPS/dsame) library for generating events presently. 
 
 Must use privileged for execution of the container and pass /dev/bus/usb into container.
 
@@ -14,3 +14,5 @@ Additionally, you must specifiy the following environment variables:
 You may also specify PPM and GAIN, defaulting to 0 and 10 respectively.
 
 See the example docker-compose.yaml for more. 
+
+Many thanks to [Mathias](https://twitter.com/AMathiasT) for all his help and patience while I tooled and fiddled.
