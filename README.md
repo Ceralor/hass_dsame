@@ -12,4 +12,5 @@ Additionally, you must specifiy the following environment variables:
 - EVENT_TYPES: (optional) Defaults to TOR for Tornado. You can also [check the NWR website](https://www.weather.gov/nwr/eventcodes) for three-letter codes, space-separated.
 
 You may also specify PPM and GAIN, defaulting to 0 and 10 respectively.
- 
+
+See the example docker-compose.yaml for more. 

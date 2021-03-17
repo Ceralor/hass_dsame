@@ -1,0 +1,18 @@
+version: '3.6'
+services:
+  hass_dsame:
+    build: 
+      context: .
+    image: hass_dsame
+    volumes:
+      - /dev/bus/usb:/dev/bus/usb
+    environment:
+      # Example, put yours in a secret file if need be
+      HASS_HOST: "https://homeassistant.mydomain.tld"
+      SAME_CODES: 001000
+      EVENT_TYPES: TOR RWT
+      FREQ: 162.525M
+    # Never share your token. Really this should be using the secrets directive but I'm lazy
+    env_file: ../secrets/hass_dsame
+    restart: always
+    privileged: true
