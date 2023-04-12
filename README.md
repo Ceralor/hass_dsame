@@ -15,6 +15,6 @@ You may also specify `PPM` and `GAIN`, defaulting to 0 and 10 respectively.
 
 See the example docker-compose.yaml for more. 
 
-Many thanks to [Mathias](https://twitter.com/AMathiasT) for all his help and patience while I tooled and fiddled.
+Many thanks to [Mathias](https://pawb.fun/@Mathias) for all his help and patience while I tooled and fiddled.
 
 The test version of the source can be mapped to /opt/source.sh inside the container with some options changed to support wideband FM instead of narrow-band. This allows you to test your entire setup using a Raspberry Pi with PiFM to generate the radio signal and ensure your automations will trigger correctly.
